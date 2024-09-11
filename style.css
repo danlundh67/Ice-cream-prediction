@@ -12,12 +12,25 @@
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+
+  --primaryColor: #050505;
+  --backgroundColor: #fafafa;
+  --backgroundColorSecondary: #ebebeb;
+}
+
+.stAppViewMain {
+  background-color: var(--backgroundColorSecondary);
+}
+/* lobotomized owl selector to give even margins */
+body * + * {
+  margin-top: var(--s-2);
+  background-color: var(--backgroundColor);
 }
 
 h1,
 h2,
-h3 {
-  color: #edbd7c;
+h3, p, code {
+  color: var(--primaryColor);
 }
 
 h1 {
@@ -34,4 +47,35 @@ h3 {
 
 p {
   font-size: var(--s0);
+}
+
+[data-testid|="column"] {
+  margin-top: 0; /* counter lobotomized owl */
+  margin-left: var(--s1);
+  color: var(--primaryColor);
+}
+
+[data-testid|="stHeader"] {
+  display: none;
+} 
+
+.stDataFrameGlideDataEditor {
+  color: #ed1a1a;
+  font-palette: var(--primaryColor);
+  background-color: var(--backgroundColor);
+}
+
+
+.stAppViewBlockContainer {
+  background-color: var(--backgroundColor); 
+  padding-top: var(--s1);
+  padding-left: var(--s3);
+  padding-right: var(--s3);
+  padding-bottom: var(--s3);
+  max-width: 110ch;
+}
+
+/* to counter lobotomized owl to remove top margin */
+.stAppViewContainer {
+  margin-top: 0;
 }

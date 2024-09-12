@@ -51,7 +51,7 @@ def layout():
     st.write("Revenue prediction is: ", pred[0])
 
     st.header("Raw data")
-    st.write("This shows the raw data")
+    st.write("This shows the raw data that is the basis for the prediction")
     st.dataframe(df)
     read_css()
 

@@ -29,7 +29,7 @@ body * + * {
 
 h1,
 h2,
-h3, p, code {
+h3, p, code, td {
   color: var(--primaryColor);
 }
 
@@ -59,11 +59,7 @@ p {
   display: none;
 } 
 
-.stDataFrameGlideDataEditor {
-  color: #ed1a1a;
-  font-palette: var(--primaryColor);
-  background-color: var(--backgroundColor);
-}
+
 
 
 .stAppViewBlockContainer {
@@ -78,4 +74,18 @@ p {
 /* to counter lobotomized owl to remove top margin */
 .stAppViewContainer {
   margin-top: 0;
+}
+
+div.css-rikpzh.e1tzin5v3{
+  background-color: rgba(28, 131, 225, 0.1);
+  border: 1px solid rgba(28, 131, 225, 0.1);
+  padding: 5% 5% 5% 10%;
+  border-radius: 5px;
+  color: rgb(30, 103, 119);
+  overflow-wrap: break-word;
+}
+/* breakline for metric text		 */
+div.css-1ht1j8u{
+  overflow-wrap: break-word;
+  white-space: break-spaces;
 }
